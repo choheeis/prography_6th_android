@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                             myViewPager.currentItem = 0
                             return true
                         }
-                        R.id.item_chats -> {
+                        R.id.item_movieList -> {
                             myViewPager.currentItem = 1
                             return true
                         }

@@ -3,9 +3,9 @@
     <item android:id="@+id/item_calls"
         android:title="CALLS"
         android:icon="@drawable/icon_call"/>
-    <item android:id="@+id/item_chats"
-        android:title="CHATS"
-        android:icon="@drawable/icon_chat"/>
+    <item android:id="@+id/item_movieList"
+        android:title="MOVIES"
+        android:icon="@drawable/icon_movielist"/>
     <item android:id="@+id/item_contacts"
         android:title="CONTACTS"
         android:icon="@drawable/icon_contact"/>

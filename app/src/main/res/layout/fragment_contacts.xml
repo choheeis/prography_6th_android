@@ -11,7 +11,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONTACTS"
+        android:text="KimChoHee"
         android:textSize="30sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
