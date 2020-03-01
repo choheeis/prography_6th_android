@@ -8,5 +8,11 @@ data class DataDefine(
     @SerializedName("director")
     val director: String,
     @SerializedName("release_date")
-    val release_date: String?
+    val release_date: String?,
+    @SerializedName("description")
+    val description: String?,
+    @SerializedName("producer")
+    val producer: String?,
+    @SerializedName("rt_score")
+    val rt_score: String?
 )

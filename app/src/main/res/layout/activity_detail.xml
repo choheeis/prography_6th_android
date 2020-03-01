@@ -40,8 +40,7 @@
         android:layout_marginLeft="16dp"
         android:text="봉준호"
         android:textSize="20sp"
-        android:textColor="#1849C4"
-        android:textStyle="bold"/>
+        android:textColor="#1849C4" />
 
     <TextView
         android:id="@+id/detail_index_producer"
@@ -65,8 +64,7 @@
         android:layout_marginLeft="16dp"
         android:text="프로듀서"
         android:textSize="20sp"
-        android:textColor="#1849C4"
-        android:textStyle="bold"/>
+        android:textColor="#1849C4" />
 
     <TextView
         android:id="@+id/detail_index_release_date"
@@ -90,8 +88,7 @@
         android:layout_marginLeft="16dp"
         android:text="2019"
         android:textSize="20sp"
-        android:textColor="#1849C4"
-        android:textStyle="bold"/>
+        android:textColor="#1849C4" />
 
     <TextView
         android:id="@+id/detail_index_rt_score"
@@ -115,8 +112,7 @@
         android:layout_marginLeft="16dp"
         android:text="100"
         android:textSize="20sp"
-        android:textColor="#1849C4"
-        android:textStyle="bold"/>
+        android:textColor="#1849C4" />
 
     <TextView
         android:id="@+id/detail_index_description"
@@ -139,7 +135,6 @@
         android:layout_marginTop="16dp"
         android:text=" 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니"
         android:textSize="20sp"
-        android:textColor="#5C5B5B"
-        android:textStyle="bold"/>
-    
+        android:textColor="#5C5B5B" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
