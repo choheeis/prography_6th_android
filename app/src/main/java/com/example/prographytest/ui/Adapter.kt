@@ -1,10 +1,11 @@
-package com.example.prographytest
+package com.example.prographytest.ui
 
 import android.content.Context
-import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.prographytest.data.DataDefine
+import com.example.prographytest.R
 
 class Adapter(private val context: Context) : RecyclerView.Adapter<ViewHolder>(){
 

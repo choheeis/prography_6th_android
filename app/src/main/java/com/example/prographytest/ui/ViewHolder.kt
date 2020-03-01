@@ -1,8 +1,10 @@
-package com.example.prographytest
+package com.example.prographytest.ui
 
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.prographytest.data.DataDefine
+import com.example.prographytest.R
 
 class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
     val position: TextView = itemView.findViewById(R.id.position)
@@ -11,8 +13,9 @@ class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
     val release_date: TextView = itemView.findViewById(R.id.release_date)
 
     fun bind(data: DataDefine){
+        position.text = (adapterPosition + 1).toString()
         title.text = data.title
-        director.text = data.director
-        release_date.text = data.release_date
+        director.text = "영화감독 : " + data.director
+        release_date.text = "출시년도 : " + data.release_date
     }
 }
