@@ -2,11 +2,14 @@ package com.example.prographytest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 
 // 화면 갯수 전역 변수로 설정
 private const val NUM_PAGES = 3
@@ -25,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         // ViewPagerAdapter를 myViewPager의 어댑터로 세팅
         val pagerAdapter: PagerAdapter = ViewPagerAdapter(supportFragmentManager)
         myViewPager.adapter = pagerAdapter
+
+        // Bottom Navigation과 ViewPager간의 연결을 위한 리스너 설정
+        BottomNavigationListener()
+        ViewPagerListener()
+
     }
 
     /** 뒤로가기 버튼 클릭시 화면 슬라이드 유무 설정 */
@@ -37,6 +45,59 @@ class MainActivity : AppCompatActivity() {
             myViewPager.currentItem = myViewPager.currentItem - 1
         }
 
+    }
+
+    /** Bottom Navigation이 반응하는 리스너
+     * --> Bottom Navigation Item 클릭시 ViewPager를 통해 해당 화면으로 슬라이드 시키기 위함 */
+    fun BottomNavigationListener(){
+        bottomNavigationBar.setOnNavigationItemSelectedListener(
+            object : BottomNavigationView.OnNavigationItemSelectedListener{
+                override fun onNavigationItemSelected(item: MenuItem): Boolean {
+                    when(item.itemId){
+                        R.id.item_calls -> {
+                            // 클릭한 Bottom Navigation item에 해당하는 화면으로 강제 슬라이드
+                            myViewPager.currentItem = 0
+                            return true
+                        }
+                        R.id.item_chats -> {
+                            myViewPager.currentItem = 1
+                            return true
+                        }
+                        R.id.item_contacts -> {
+                            myViewPager.currentItem = 2
+                            return true
+                        }
+                        else -> return false
+                    }
+                }
+            }
+        )
+    }
+
+    /** ViewPager이 반응하는 리스너
+     * --> ViewPager로 넘어간 화면에 해당하는 Bottom Navigation item 활성화 시키기 위함 */
+    fun ViewPagerListener(){
+        viewPager.addOnPageChangeListener(
+            object : ViewPager.OnPageChangeListener{
+                override fun onPageScrollStateChanged(state: Int) {
+
+                }
+
+                override fun onPageScrolled(
+                    position: Int,
+                    positionOffset: Float,
+                    positionOffsetPixels: Int
+                ) {
+
+                }
+
+                override fun onPageSelected(position: Int) {
+                    // 슬라이드 된 화면에 해당하는 Bottom Navigation item을 활성화시킴
+                    bottomNavigationBar.menu.getItem(position).isChecked = true
+                }
+
+            }
+        )
     }
 
     /** ViewPager가 사용하는 Adpater 클래스 */
