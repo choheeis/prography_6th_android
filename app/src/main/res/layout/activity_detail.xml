@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".ui.DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기생충"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_index_director"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="감독"
+        android:textSize="20sp"
+        android:textColor="#302E2E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_director"
+        app:layout_constraintLeft_toRightOf="@+id/detail_index_director"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_director"
+        app:layout_constraintBottom_toTopOf="@+id/detail_index_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="봉준호"
+        android:textSize="20sp"
+        android:textColor="#1849C4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_index_producer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="제작자"
+        android:textSize="20sp"
+        android:textColor="#302E2E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_producer"
+        app:layout_constraintLeft_toRightOf="@+id/detail_index_producer"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_producer"
+        app:layout_constraintBottom_toTopOf="@+id/detail_index_producer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="프로듀서"
+        android:textSize="20sp"
+        android:textColor="#1849C4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_index_release_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_producer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="출시년도"
+        android:textSize="20sp"
+        android:textColor="#302E2E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_release_date"
+        app:layout_constraintLeft_toRightOf="@+id/detail_index_release_date"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_release_date"
+        app:layout_constraintBottom_toTopOf="@+id/detail_index_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="2019"
+        android:textSize="20sp"
+        android:textColor="#1849C4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_index_rt_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_index_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="평점"
+        android:textSize="20sp"
+        android:textColor="#302E2E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_rt_score"
+        app:layout_constraintLeft_toRightOf="@id/detail_index_rt_score"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_rt_score"
+        app:layout_constraintBottom_toTopOf="@+id/detail_index_rt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="100"
+        android:textSize="20sp"
+        android:textColor="#1849C4"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_index_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_rt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="설명"
+        android:textSize="20sp"
+        android:textColor="#302E2E"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/detail_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_index_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니"
+        android:textSize="20sp"
+        android:textColor="#5C5B5B"
+        android:textStyle="bold"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
