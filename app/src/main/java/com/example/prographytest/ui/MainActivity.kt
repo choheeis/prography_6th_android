@@ -12,6 +12,9 @@ import com.example.prographytest.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
+
+
+
 // 화면 갯수 전역 변수로 설정
 private const val NUM_PAGES = 3
 
