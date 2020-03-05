@@ -73,7 +73,7 @@
     ~~~kotlin
     object ServerImpl {
 
-    private const val BASE_URL = "https://ghibliapi.herokuapp.com"
+    private const val BASE_URL = "서버 도메인 주소"
 
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
