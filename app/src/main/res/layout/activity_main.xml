@@ -25,7 +25,6 @@
         app:menu="@menu/bottom_nav_items"
         android:background="@color/colorPrimary"
         app:itemTextColor="@color/bottom_navigation_colors"
-        app:itemIconTint="@color/bottom_navigation_colors"
-        />
+        app:itemIconTint="@color/bottom_navigation_colors" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
